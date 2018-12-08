@@ -71,7 +71,7 @@ def checkUsernameAndPassword(username, password):
     success = False
 
     for r in reader:
-        if username = r[1] && password == r[2]:
+        if username = r[1] and password == r[2]:
             success = True
 
     return success
