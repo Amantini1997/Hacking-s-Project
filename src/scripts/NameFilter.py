@@ -3,7 +3,6 @@ import csv
 name_column = []
 search_term = raw_input()
 search_results = []
-columns = []
 search_index = 0
 search_indexes = []
 
