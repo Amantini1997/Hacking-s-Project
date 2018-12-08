@@ -2,7 +2,6 @@ import csv
 
 start_time_column = []
 search_results = []
-columns = []
 search_index = 0
 search_indexes = []
 
