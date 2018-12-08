@@ -1,3 +1,4 @@
 ﻿event_id,name,description,start,end,created,created_by,status,location,attendees_limit,
 1,HackKings Meetup,meetup for hackkings participants,05/12/2018 12:00,08/12/2018 14:33,25/11/2018 15:00,1,private,"Kings College, London",200
-2,Second London event,meetup for hackkings participants,05/12/2018 12:00,08/12/2018 14:33,25/11/2018 15:00,1,private,"London",200
+2,Dinner Party,gathering for friends and family,20/12/2018 18:00,21/12/2018 01:00,25/11/2018 16:00,2,private,"Strand,London",50
+3,Birthday Gathering, party for 21st birthday, 29/12/2018 17:00,29/12/2018 00:00,26/11/2018 19:00,2,private,"Canada Water, London",20
