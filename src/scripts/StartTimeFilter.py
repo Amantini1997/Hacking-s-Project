@@ -1,27 +1,27 @@
 import csv
 
-location_column = []
-search_term = raw_input()
+start_time_column = []
 search_results = []
 columns = []
 search_index = 0
 search_indexes = []
 
+print "Please enter a start time in the format DD/MM/YYYY HH:MM"
+search_term = raw_input()
+
 with open('../event.csv', "rb") as e:
     r = csv.reader(e)
     for row in r:
-        location_column.append(row[8])
-    print location_column
+        start_time_column.append(row[3])
+    print start_time_column
 
-    for location in location_column:
-        print "Current location: ", location
-        if location.find(search_term) > -1:
-            print "An event has been found in ", location, "!"
-            search_index = location_column.index(location)
+    for start_time in start_time_column:
+        if start_time.find(search_term) > -1:
+            search_index = start_time_column.index(start_time)
             search_indexes.append(search_index)
 
         else:
-            print "nothing was found"
+            print "Nothing was found!"
 
 print "Search indexes are: ", search_indexes
 with open('../event.csv', "rb") as e:
@@ -31,6 +31,6 @@ with open('../event.csv', "rb") as e:
         if n in search_indexes:
             search_results.append(row)
         n += 1
-    print "The event(s) in this location are:"
+    print "The event(s) starting at this time are:"
     for row in search_results:
         print row[1]
