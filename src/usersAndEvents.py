@@ -62,3 +62,16 @@ def addEvent(event):
     with open(filename, 'w', newline = '') as theFile:
         writer = csv.writer(theFile, delimiter = ',')
         writer.writerow([event.id], [event.name], [event.desc], [event.start], [event.end], [event.now], ["created_by"], [event.status], [event.location], [event.limit])
+
+def checkUsernameAndPassword(username, password):
+
+    filename = 'user_profile_id'
+    reader = getData(filename)
+
+    success = False
+
+    for r in reader:
+        if username = r[1] && password == r[2]:
+            success = True
+
+    return success
